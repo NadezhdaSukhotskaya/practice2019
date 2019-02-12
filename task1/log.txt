@@ -1,0 +1,12 @@
+$ git log
+commit dbcd55373568cf9f4599c3a42cee5d040c43fb19 (HEAD -> master)
+Author: NadezhdaSukhotskaya <47493685+NadezhdaSukhotskaya@users.noreply.github.com>
+Date:   Tue Feb 12 23:16:37 2019 +0300
+
+    add status.txt
+
+commit e2a04f82ebb29e327cbbf87d28c28e8d33cc4174
+Author: NadezhdaSukhotskaya <47493685+NadezhdaSukhotskaya@users.noreply.github.com>
+Date:   Tue Feb 12 22:20:37 2019 +0300
+
+    add .gitignore
