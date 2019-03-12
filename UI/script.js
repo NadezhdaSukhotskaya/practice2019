@@ -400,7 +400,6 @@ let gallery = (function () {
             return false;
         }
 
-
     }
 
     function addTags(id, tags) {
@@ -413,7 +412,6 @@ let gallery = (function () {
                 like: function (tag) {
                     for (let i = 0; i < len; ++i) {
                         photoPosts[index].tags.push(tag[i]);
-
                     }
                 }
             };
