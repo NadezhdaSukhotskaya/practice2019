@@ -25,8 +25,5 @@ eb4a0bdfd929ecc501250f6f3a9f7369086277d3
 5e30ae125810f2b599625e2e9e08fca539cd2571
 
 #task5
-status: dine
+status: done
 commit: 64695cedb3156a30f803563fcabc95d2c8c5bc90
-
-
-
