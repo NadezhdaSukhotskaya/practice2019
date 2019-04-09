@@ -11,9 +11,7 @@ class PostModel {
                 return false;
             }
             return true;
-        }).sort(function (x, y) {
-            return x.createdAt.getDate() - y.createdAt.getDate();
-        }).slice(skip, skip + top);
+        })
 
     }
 
@@ -32,9 +30,7 @@ class PostModel {
                 }
             }
             return true;
-        }).slice(skip, skip + top).sort(function (x, y) {
-            return x.createdAt.getDate() - y.createdAt.getDate();
-        });
+        })
     }
 
     _filterByDate(date, skip, top) {
@@ -57,9 +53,7 @@ class PostModel {
                 }
             }
             return true;
-        }).sort(function (x, y) {
-            return x.createdAt.getDate() - y.createdAt.getDate();
-        }).slice(skip, skip + top);
+        })
     }
 
     getPage(skip, top, filterConfig) {
@@ -75,7 +69,9 @@ class PostModel {
             if (filterConfig.date) {
                 filteredPosts = this._filterByDate(filterConfig.date, skip, top);
             }
-            return filteredPosts;
+            return filteredPosts.slice(skip, skip + top).sort(function (x, y) {
+                return x.createdAt.getDate() - y.createdAt.getDate();
+            });
 
         } else {
             return this._posts.slice(skip, skip + top).slice(skip, skip + top).sort(function (x, y) {
@@ -221,7 +217,6 @@ class PostModel {
             }
         }
         return validatePosts;
-
     }
 }
 
