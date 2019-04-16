@@ -1,5 +1,8 @@
-html, body {
+html{
     height: 100%;
+}
+body{
+    height: auto;
 }
 
 body {
@@ -11,8 +14,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    align-items: baseline;
-    margin-bottom: 7px;
+    align-items: center;
+    margin: 0 15%;
     width: 100%;
     order: 0;
 }
@@ -21,6 +24,7 @@ body {
     border: 1px solid  black;
     font-size: 14px;
     padding: 0.7rem;
+    margin-bottom: 2%;
 }
 
 .main {
@@ -48,7 +52,6 @@ body {
     width: 100%;
     height: auto;
     text-align: center;
-
 }
 
 .content{
@@ -70,7 +73,7 @@ body {
 .main-photo{
     order: 1;
     width: 200px;
-    margin: 2px 7px 0px 0;
+    margin: 2px 7px 0 0;
 }
 
 .main-content{
@@ -104,15 +107,15 @@ body {
 }
 
 .filtering-area{
+    margin-left: 16%;
+    margin-top: 1%;
     order:1;
     width: 100%;
-    margin: 2%;
     align-items: flex-start;
 }
 
 .footer{
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
     margin-top: 50px;
     width: 100%;
