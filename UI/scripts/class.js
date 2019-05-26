@@ -12,7 +12,6 @@ class PostModel {
             }
             return true;
         })
-
     }
 
     _filterByTags(tags, skip, top) {
@@ -58,7 +57,7 @@ class PostModel {
 
     getPage(skip, top, filterConfig) {
         if (filterConfig) {
-            let filteredPosts;
+            let filteredPosts=[];
 
             if (filterConfig.author) {
                 filteredPosts = this._filterByAuthor(filterConfig.author, skip, top);
@@ -78,7 +77,6 @@ class PostModel {
                 return x.createdAt.getDate() - y.createdAt.getDate();
             });
         }
-
     }
 
     get(id) {
@@ -154,7 +152,6 @@ class PostModel {
         } else {
             return -1;
         }
-
     }
 
     edit(id, photoPost) {
@@ -219,4 +216,3 @@ class PostModel {
         return validatePosts;
     }
 }
-
