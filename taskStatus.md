@@ -35,4 +35,13 @@ skipped
 skipped
 
 #task8
+done
+
+#task9
+skipped
+
+#task10
+skipped
+
+#task11
 in process
