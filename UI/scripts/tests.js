@@ -246,16 +246,5 @@ console.log(posts.add({
     likes: ['tanya-mint', 'le_sacha'],
 }));
 
-console.log(PostModel.validate({author: 123}));
-
-console.log(posts.edit('3', {author: 'name'}));
-console.log(posts.edit('3', {id: '1000'}));
-console.log(posts.edit('5', {description: 'new str'}));
-console.log(posts.edit('8', {description: ''}));
-console.log(posts.edit(0, {description: 'smth'}));
-
-console.log(posts.remove('4'));
-console.log(posts.remove(10));
-
-console.log("validate posts:");
-console.log(posts.addAll(photoPosts));
+view = new classView();
+view._createPost();
