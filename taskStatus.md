@@ -27,3 +27,12 @@ eb4a0bdfd929ecc501250f6f3a9f7369086277d3
 #task5
 status: done
 commit: 64695cedb3156a30f803563fcabc95d2c8c5bc90
+
+#task6
+skipped
+
+#task7
+skipped
+
+#task8
+in process
